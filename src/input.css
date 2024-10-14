@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+      font-family: 'Google Sans Text';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(/public/font/Google\ Sans\ Text.woff2) format('woff2');
+    }
+  }
+/* Custom class here */
+@layer components {
+  .excerpt {
+    @apply text-gray-500 text-lg mt-5
+  }
+}
+
+@layer base {
+    h2 {
+      @apply text-gray-800 text-2xl font-bold tracking-wide my-5
+    }
+    h4 {
+      @apply text-gray-800 text-xl font-bold tracking-wide my-5
+    }
+    p {
+      @apply text-gray-800 text-lg sm:text-justify leading-8
+    }
+    a {
+      @apply underline
+    }
+    ul {
+      @apply list-disc ml-5 sm:ml-8 text-gray-800 text-lg my-3
+    }
+    ol {
+      @apply list-decimal ml-5 sm:ml-8 text-gray-800 text-lg my-3
+    }
+
+}

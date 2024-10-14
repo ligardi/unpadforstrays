@@ -1,0 +1,35 @@
+[
+  {
+    "Wireless Headphones": {
+      "price": 79.99,
+      "availability": "In Stock",
+      "link": "https://example.com/wireless-headphones",
+      "bought": 150
+    },
+    "Smartphone Stand": {
+      "price": 19.99,
+      "availability": "Preorder",
+      "link": "https://example.com/smartphone-stand",
+      "bought": 300
+    },
+    "Portable Charger": {
+      "price": 29.99,
+      "availability": "Out of Stock",
+      "link": "https://example.com/portable-charger",
+      "bought": 500
+    },
+    "Bluetooth Speaker": {
+      "price": 45.50,
+      "availability": "In Stock",
+      "link": "https://example.com/bluetooth-speaker",
+      "bought": 220
+    },
+    "Smartwatch": {
+      "price": 199.99,
+      "availability": "Preorder",
+      "link": "https://example.com/smartwatch",
+      "bought": 120
+    }
+  }
+
+]

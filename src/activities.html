@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="max-w-5xl mx-auto">
+    <nav class="bg-[#FDF6BA] rounded-2xl mx-2 mt-4 py-2 ">
+        <div class="flex justify-between items-center">
+          <!-- logo image on the left -->
+          <div>
+              <div class="mx-2 ml-3 flex gap-x-1">
+                  <img src="https://s6.imgcdn.dev/9IMB0.png" alt="Unpad Animal Friend logo" class="w-[35px] md:w-[40px] h-auto">
+                  <p class="ml-2 text-sm my-auto font-semibold text-gray-800 hidden sm:block">Peduli Hewan <br> Jalanan Unpad</p>
+              </div>
+          </div>
+          <!--nav links on big screen only-->
+          <div class="mx-8 space-x-5 hidden sm:block">
+            <a class="text-gray-700 text-sm font-medium no-underline" href="./bloglist.html">Blogs</a>
+            <a class="text-gray-700 text-sm font-medium no-underline" href="http://">FAQ</a>
+            <a class="text-gray-700 text-sm font-medium no-underline" href="./about.html">About</a>
+          </div>
+          <!-- menu button -->
+          <button id="nav-toggle" class="sm:hidden px-6 py-1 text-gray-900 cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          </button>
+        </div>
+        
+        <!-- Menu Dropdown -->
+        <div id="nav-menu" class="p-5 hidden">
+          <div class="w-full flex flex-col items-end gap-y-4 mr-2">
+            <a href="/src/index.html" class="no-underline rounded-3xl flex justify-end w-full py-1 pr-3 text-3xl font-medium hover:bg-yellow-200 cursor-pointer">Volunteering</a>
+            <a href="/src/about.html" class="no-underline rounded-3xl flex justify-end w-full py-1 pr-3 text-3xl font-medium hover:bg-yellow-200 cursor-pointer">About</a>
+            <a href="/src/bloglist.html" class="no-underline rounded-3xl flex justify-end w-full py-1 pr-3 text-3xl font-medium hover:bg-yellow-200">Blog</a>
+          </div>
+        </div>
+    </nav>
+    <!-- Hero -->
+    <div class="md:flex items-center justify-between mx-3 mt-10">
+      <div class="flex flex-col gap-y-5">
+        <h1 class="font-bold text-5xl md:text-7xl">Our Activities</h1>
+        <p class="max-w-96">The charity conducts its mission through two main sections of activities: core activities and outreach programs.</p>
+      </div>
+      <div class="mt-7">
+        <img class="w-96 right-20" src="/public/img/activities.webp" alt="Unpad Street Animal Friend volunteers">
+      </div>
+
+    </div>
+    <!-- Activities List -->
+    <div class="mx-3 mt-10">
+      <h1 class="font-semibold text-4xl text-gray-700">Core Activities</h1>
+    </div>
+    <div class="my-4 mx-2 grid grid-cols-2 md:grid-cols-4 place-items-center items-baseline">
+      <div class=" rounded-3xl p-2 w-36 flex flex-col">
+        <!-- <img class="rounded-2xl h-48 w-auto" src="https://s6.imgcdn.dev/FivBt.jpg"> -->
+         <div class="bg-cover bg-center h-36 rounded-xl" style="background-image: url('https://s6.imgcdn.dev/FivBt.jpg');"></div>
+        <details>
+            <summary class="flex flex-col cursor-pointer items-center my-2">
+                <h1 class="text-base font-semibold text-center text-wrap my-1">Medical Care</h1>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24">
+                    <path fill="none" stroke="#6b6b6b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m17 10l-5 5l-5-5" />
+                  </svg>
+                </div>
+            </summary>
+            <p class="text-xs mb-1 text-start min-h-10">We provide on-site medical care for street animals in need, monitoring health and weight, and foster care.</p>
+        </details>
+      </div>
+
+      <div class=" rounded-3xl p-2 w-36 flex flex-col">
+        <!-- <img class="rounded-2xl h-48 w-auto" src="https://s6.imgcdn.dev/FivBt.jpg"> -->
+         <div class="bg-cover bg-center h-36 rounded-xl" style="background-image: url('https://s6.imgcdn.dev/mWCJM.th.jpg');"></div>
+        <details>
+            <summary class="flex flex-col cursor-pointer items-center my-2">
+                <h1 class="text-base font-semibold text-center text-wrap my-1">Nutritional Supplementation</h1>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24">
+                    <path fill="none" stroke="#6b6b6b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m17 10l-5 5l-5-5" />
+                  </svg>
+                </div>
+            </summary>
+            <p class="text-xs mb-1 text-start min-h-10">The charity provides additional nutrients to enhance their diet and address specific health needs. <br><br> The primary goal is to improve the overall health and well-being of stray animals. Additional supplements can help address deficiencies in essential vitamins, fish oil, and other nutrients.</p>
+        </details>
+      </div>
+
+      <div class=" rounded-3xl p-2 w-36 flex flex-col">
+         <div class="bg-cover bg-center h-36 rounded-xl" style="background-image: url('https://s6.imgcdn.dev/FiOl9.th.jpg');"></div>
+        <details>
+            <summary class="flex flex-col cursor-pointer items-center my-2">
+                <h1 class="text-base font-semibold text-center text-wrap my-1">(TNR) <br> Trap-Neuter-Return</h1>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24">
+                    <path fill="none" stroke="#6b6b6b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m17 10l-5 5l-5-5" />
+                  </svg>
+                </div>
+            </summary>
+            <p class="text-xs mb-1 text-start min-h-10">TNR helps to stabilize the stray cats population in Universitas Padjadjaran.<br><br> We also found that TNR improves the overall health and behavior of stray cats. TNR also serve as a platform for educating the public about responsible pet ownership <br><br> The charity also aims to change the current narrative about TNR among Unpad community.</p>
+        </details>
+      </div>
+
+      <div class=" rounded-3xl p-2 w-36 flex flex-col">
+        <!-- <img class="rounded-2xl h-48 w-auto" src="https://s6.imgcdn.dev/FivBt.jpg"> -->
+         <div class="bg-cover bg-center h-36 rounded-xl" style="background-image: url('https://s6.imgcdn.dev/9CoV2.th.jpg');"></div>
+        <details>
+            <summary class="flex flex-col cursor-pointer items-center my-2">
+                <h1 class="text-base font-semibold text-center text-wrap my-1">Safety Collar Program</h1>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24">
+                    <path fill="none" stroke="#6b6b6b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m17 10l-5 5l-5-5" />
+                  </svg>
+                </div>
+            </summary>
+            <p class="text-xs mb-1 text-start min-h-10">These collars enhance the visibility of street animals in low-light conditions and thus, help reduce the risk of accidents in campus' streets.</p>
+        </details>
+      </div>
+    </div>
+    <!-- Public Outreach -->
+  <div class="mx-3 my-6">
+      <h1 class="my-5 font-semibold text-4xl text-gray-700">Public Outreach</h1>
+      <p class="sm:w-1/2 text-base">In addition to these core activities, the charity also runs outreach programs designed to engage the community and promote responsible pet ownership.</p>
+      <div>
+        <ul class="text-base">
+          <li>
+            <p><strong>Pet Cargo Borrowing Service:</strong> Free pet cargo borrowing service to assist pet owners in transporting their animals safely,</p>
+          </li>
+          <li>
+            <p><strong>Cat Adoption Program:</strong> Helps find loving homes for stray or previously owned cats,</p>
+          </li>
+          <li>
+            <p><strong>Free Consultations: </strong> Free consultation services by vet student volunteers to provide guidance for pet owners in need.</p>
+          </li>
+        </ul>
+      </div>
+  </div>
+      
+
+
+    
+</body>
+</html>
