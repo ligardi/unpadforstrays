@@ -8,18 +8,21 @@
 </head>
 
 <body class="max-w-5xl mx-auto">
-  <nav class="bg-[#FDF6BA] rounded-2xl mx-2 mt-4 py-2 ">
+  <nav class="z-20 fixed top-0 left-0 right-0 bg-[#FDF6BA] rounded-xl mx-2 md:mx-[110px] mt-2 py-2 ">
     <div class="flex justify-between items-center">
       <!-- logo image on the left -->
       <div>
           <div class="mx-2 ml-3 flex gap-x-1">
-              <img src="https://s6.imgcdn.dev/9IMB0.png" alt="Unpad Animal Friend logo" class="w-[35px] md:w-[40px] h-auto">
-              <p class="ml-2 text-sm my-auto font-semibold text-gray-800 hidden sm:block">Peduli Hewan <br> Jalanan Unpad</p>
+              <a href="/">
+                <img class="rounded-none m-0 w-[35px] md:w-[40px] h-auto" src="https://s6.imgcdn.dev/9IMB0.png" alt="Unpad Animal Friend logo" >
+              </a>                    
+              <h5 class="ml-2 text-sm my-auto font-semibold text-gray-800 hidden sm:block">Peduli Hewan <br> Jalanan Unpad</h5>
           </div>
       </div>
       <!--nav links on big screen only-->
       <div class="mx-8 space-x-5 hidden sm:block">
-        <a class="text-gray-700 text-sm font-medium no-underline" href="./bloglist.html">Blogs</a>
+        <a class="text-gray-700 text-sm font-medium no-underline" href="./blogs.html">Blogs</a>
+        <a class="text-gray-700 text-sm font-medium no-underline" href="./donate.html">Donate</a>
         <a class="text-gray-700 text-sm font-medium no-underline" href="http://">FAQ</a>
         <a class="text-gray-700 text-sm font-medium no-underline" href="./about.html">About</a>
       </div>
@@ -33,21 +36,23 @@
     <!-- Menu Dropdown -->
     <div id="nav-menu" class="p-5 hidden">
       <div class="w-full flex flex-col items-end gap-y-4 mr-2">
-        <a href="/src/index.html" class="no-underline rounded-3xl flex justify-end w-full py-1 pr-3 text-3xl font-medium hover:bg-yellow-200 cursor-pointer">Volunteering</a>
-        <a href="/src/about.html" class="no-underline rounded-3xl flex justify-end w-full py-1 pr-3 text-3xl font-medium hover:bg-yellow-200 cursor-pointer">About</a>
-        <a href="/src/bloglist.html" class="no-underline rounded-3xl flex justify-end w-full py-1 pr-3 text-3xl font-medium hover:bg-yellow-200">Blog</a>
+        <a href="/src/donate.html" class="no-underline rounded-3xl flex justify-end w-full py-1 pr-3 text-3xl font-medium hover:bg-yellow-200 cursor-pointer">Donate</a>
+        <a href="/src/about.html" class="no-underline rounded-3xl flex justify-end w-full py-1 pr-3 text-3xl font-medium hover:bg-yellow-200 cursor-pointer">Blog</a>
+        <a href="/src/" class="no-underline rounded-3xl flex justify-end w-full py-1 pr-3 text-3xl font-medium hover:bg-yellow-200">FAQ</a>
+        <a href="/src/about.html" class="no-underline rounded-3xl flex justify-end w-full py-1 pr-3 text-3xl font-medium hover:bg-yellow-200">About</a>
       </div>
+
     </div>
   </nav>
 
   <!-- Breadcrumb -->
-  <div class="ml-3 my-5 flex flex-row gap-4 items-center">
+  <div class="ml-3 pt-24 my-5 flex flex-row gap-4 items-center">
   <a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="auto" viewBox="0 0 24 24">
     <path fill="#6b6b6b" d="M5 20V9.5l7-5.288L19 9.5V20h-5.192v-6.384h-3.616V20z" />
   </svg></a>
   <div>›</div>
   <div>
-    <a class="no-underline" href="/src/bloglist.html"><p class="text-gray-600 text-sm md:text-sm">Articles</p></a>
+    <a class="no-underline" href="/src/blogs.html"><h6 class="text-gray-600 text-sm md:text-sm">Articles</h6></a>
   </div>
 
   </div>
@@ -57,19 +62,19 @@
     <h1 class="text-gray-700 font-bold tracking-wider leading-[2.5rem] md:leading-[4rem] text-4xl md:text-6xl">World Stray Animal Day: Altruism Isn't About Grand Gestures</h1>
     <!-- date & writer bikin flex -->
     <div class="my-3 flex gap-y-1 flex-row gap-2 items-center">
-      <p class="text-xs md:text-sm text-gray-500">10 September 2024</p>
-      <p class="text-gray-500">‧</p>
+      <h5 class="text-xs md:text-sm text-gray-500">10 September 2024</h5>
+      <h5 class="text-gray-500">‧</h5>
       <div class="flex gap-x-1 items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="auto" viewBox="0 0 24 24">
           <path fill="#6b6b6b" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4s-4 1.79-4 4s1.79 4 4 4m0 2c-2.67 0-8 1.34-8 4v1c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-1c0-2.66-5.33-4-8-4" />
         </svg>
-        <p class="text-xs md:text-sm text-gray-500">Writer</p>
+        <h5 class="text-xs md:text-sm text-gray-500">Writer</h5>
       </div>
       <div id="sharer" class="cursor-pointer flex items-center gap-1 ml-7 md:ml-1 border border-gray-500 py-1 px-3 rounded-full">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
           <path fill="#6b6b6b" d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81c1.66 0 3-1.34 3-3s-1.34-3-3-3s-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65c0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92" />
         </svg>
-        <p class="text-xs md:text-sm text-gray-500">Share</p>
+        <h5 class="text-xs md:text-sm text-gray-500">Share</h5>
       </div>
     </div>
     <div>
@@ -95,10 +100,11 @@
     </ol>
     <p> ini elemen p. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quas laboriosam ducimus iusto corrupti corporis vel neque repellendus qui numquam totam, itaque inventore ea quam? Placeat, sapiente. Nihil veniam optio pariatur cum mollitia, in sed quam sequi impedit, atque laboriosam amet recusandae repudiandae ut dolores ullam eos quas ab eveniet, quis ipsa corrupti? Dolore architecto beatae ab aperiam quos veniam iure expedita laudantium consectetur perspiciatis, quibusdam unde neque.</p>
 
-    <h2>Test H2 here</h2>
+    <img src="https://picsum.photos/id/100/1500/800">
+    <img src="https://picsum.photos/id/140/1500/800">
+    <img src="https://picsum.photos/id/120/1500/800">
     
-    <p>Tenetur hic blanditiis incidunt nihil esse animi culpa ipsum consectetur facilis laboriosam recusandae doloremque aut nesciunt officia molestias itaque dolore quibusdam quidem laborum, dignissimos, praesentium sunt! Perspiciatis quidem quos veritatis esse animi dolorum in enim aperiam voluptate rerum provident minus reiciendis soluta odio sunt rem quod consequuntur, eligendi officia nesciunt laboriosam, tempore totam culpa! Recusandae pariatur ipsa saepe porro debitis exercitationem quidem repellat culpa, ea accusantium aut magnam libero consequuntur nobis nam ratione ipsam possimus odit tenetur, deleniti nisi explicabo qui a? Adipisci amet tenetur ut, ipsum voluptatibus, vitae esse obcaecati nobis quia debitis alias, dicta exercitationem? Sequi nemo, veniam eligendi fugiat enim vero maiores? Animi velit qui quidem sequi vel!</p> 
-    <h4>Test H4</h4>      
+    <p>Tenetur hic blanditiis incidunt nihil esse animi culpa ipsum consectetur facilis laboriosam recusandae doloremque aut nesciunt officia molestias itaque dolore quibusdam quidem laborum, dignissimos, praesentium sunt! Perspiciatis quidem quos veritatis esse animi dolorum in enim aperiam voluptate rerum provident minus reiciendis soluta odio sunt rem quod consequuntur, eligendi officia nesciunt laboriosam, tempore totam culpa! Recusandae pariatur ipsa saepe porro debitis exercitationem quidem repellat culpa, ea accusantium aut magnam libero consequuntur nobis nam ratione ipsam possimus odit tenetur, deleniti nisi explicabo qui a? Adipisci amet tenetur ut, ipsum voluptatibus, vitae esse obcaecati nobis quia debitis alias, dicta exercitationem? Sequi nemo, veniam eligendi fugiat enim vero maiores? Animi velit qui quidem sequi vel!</p>     
     <p> Architecto amet laborum quas ut harum eos neque ullam non numquam! Vero, ad cumque, totam delectus quos placeat aliquid molestias deleniti velit perferendis itaque rem voluptas ipsum necessitatibus consequuntur vitae quaerat. Dignissimos, a exercitationem? Odio recusandae in deserunt id iste ipsum consequatur atque maiores neque illum vitae quisquam ea odit exercitationem dolor cumque repellat totam, quasi repellendus possimus quos ratione sit sint sunt. Libero beatae quam ad ea. Blanditiis, illo quibusdam!</p>
     
   </main>
